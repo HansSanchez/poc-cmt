@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   api:
-    container_name: revisa-tu-piel-contenedor-backend
+    container_name: poc-cmt-contenedor-backend
     build:
       context: .
     restart: always
@@ -13,7 +13,7 @@ services:
     networks:
       local-network:
         aliases:
-          - revisa-tu-piel-backend
+          - poc-cmt-backend
 
 networks:
   local-network:
